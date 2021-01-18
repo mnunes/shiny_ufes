@@ -1,0 +1,12 @@
+
+.Rproj.user/*
+slides/slides.aux
+slides/slides.log
+slides/slides.nav
+slides/slides.out
+slides/slides.R
+slides/slides.rnw
+slides/slides.snm
+slides/slides.tex
+slides/slides.toc
+slides/slides.vrb
