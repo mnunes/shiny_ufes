@@ -8,9 +8,12 @@ function(input, output, session) {
       filter(Ano <= input$slider[2])
   })
   
-  output$plot1 <- renderPlot({
-    ggplot(selectedData(), aes(x=x, y=y, colour=Regiao)) +
-      geom_point()
+  output$plot1 <- renderPlotly({
+    g <- ggplot(selectedData(), aes(x = x, y = y, colour = Regiao)) +
+      geom_point() +
+      scale_x_continuous(labels = comma_format()) +
+      scale_y_continuous(labels = comma_format())
+    ggplotly(g)
   })
   
 }

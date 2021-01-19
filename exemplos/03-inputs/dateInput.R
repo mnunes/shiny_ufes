@@ -9,8 +9,8 @@ ui <- fluidPage(title = "Inputs e Outputs com Shiny",
             # dateInput
             dateInput(inputId = "data",
                       label = "Selecione uma data:",
-                      min = "2000-01-01",
-                      max = "2018-12-31")
+                      min = "2010-01-01",
+                      max = "2030-12-31")
   )
 
 # server.R:

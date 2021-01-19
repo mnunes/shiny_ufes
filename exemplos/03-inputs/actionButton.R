@@ -1,6 +1,6 @@
 library(shiny)
 
-# ui.R
+# ui
 
 ui <- fluidPage(
   sliderInput("obs", "Numero de observacoes", min=0, max=1000, value=500, step=1),
@@ -8,7 +8,7 @@ ui <- fluidPage(
   plotOutput("distPlot")
 )
 
-# server.R
+# server
 
 server <- function(input, output) {
   output$distPlot <- renderPlot({

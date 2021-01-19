@@ -1,12 +1,13 @@
-# UI
+# ui
+
 ui <- fluidPage(
   
-  # Titulo do App
+  # titulo do App
   titlePanel("Oi Shiny!"),
   
   sidebarLayout(
     
-    # Sidebar com um slider
+    # sidebar com um slider
     sidebarPanel(
       sliderInput("obs",
                   "Numero of observacoes:",
@@ -22,13 +23,15 @@ ui <- fluidPage(
   )
 )
 
-# Server
+# server
+
 server <- function(input, output) {
   output$distPlot <- renderPlot({
     hist(rnorm(input$obs))
   })
 }
 
-# App rodando
+# app rodando
+
 shinyApp(ui, server)
 

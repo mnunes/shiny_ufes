@@ -1,8 +1,7 @@
 library(shiny)
 library(ggplot2)
-library(dplyr)
 library(plotly)
+library(scales)
 
 bm <- read.csv(file="BancoMundial.csv")
-
 

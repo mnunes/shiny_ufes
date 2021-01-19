@@ -1,6 +1,6 @@
 library(shiny)
 
-# ui.R
+# ui
 
 ui <- shinyUI(
   fluidPage(title = "Inputs e Outputs com Shiny",
@@ -19,10 +19,11 @@ ui <- shinyUI(
                         multiple = TRUE, selectize = FALSE)
   ) )
 
-# server.R
+# server
 
-server <- shinyServer(function(input, output){
-})
+server <- shinyServer(
+  function(input, output){}
+  )
 
 # app rodando
 

@@ -1,6 +1,6 @@
 library(shiny)
 
-# ui.R
+# ui
 
 ui <- shinyUI(
   fluidPage(title = "Inputs e Outputs com Shiny",
@@ -9,10 +9,10 @@ ui <- shinyUI(
             hr(), # inserir uma linha
             # textInput
             textInput(inputId = "texto",
-                      label = "Qual o seu nome?", value = "Preencha com o seu nome"),
+                      label = "Qual o seu nome?", value = "Apague e digite aqui"),
             # numericInput
             numericInput(inputId = "numero",
-                         label = "Escolha um numero entre 0 a 10", 
+                         label = "Escolha um numero de 0 a 10", 
                          value = 3,
                          step = 1,
                          min = 0,
@@ -23,9 +23,11 @@ ui <- shinyUI(
   )
 )
 
-# server.R:
+# server
 
-server <- shinyServer(function(input, output){})
+server <- shinyServer(
+  function(input, output){}
+)
 
 # app rodando
 

@@ -1,10 +1,18 @@
-if (interactive()) {
-  
-  ui <- flowLayout(
-    numericInput("rows", "How many rows?", 5),
-    selectInput("letter", "Which letter?", LETTERS),
-    sliderInput("value", "What value?", 0, 100, 50)
-  )
-  shinyApp(ui, server = function(input, output) { })
+# server
+
+server <- function(input, output) {
+  output$plot1 <- renderPlot(plot(cars))
+  output$plot2 <- renderPlot(plot(pressure))
+  output$plot3 <- renderPlot(plot(AirPassengers))
 }
+
+# layout vertical
+
+ui <- flowLayout(
+  numericInput("rows", "Quantas linhas", 5),
+  selectInput("letter", "Qual letra?", LETTERS),
+  sliderInput("value", "Qual valor?", 0, 100, 50)
+)
+
+shinyApp(ui, server)
 

@@ -1,23 +1,27 @@
 library(shiny)
+library(ggplot2)
 library(plotly)
 
-# ui.R
+# ui
 
 ui <- shinyUI(
   fluidPage(title = "Inputs e Outputs com Shiny",
             hr(),  # inserir uma linha
-            "Uso do renderPlotly e do renderDygraph",
+            "Uso do plotly",
             hr(), # inserir uma linha
             fluidRow(
               column(6, plotlyOutput("grafico1", width = 800))
             )
   ) )
 
-# server.R
+# server
 
 server <- shinyServer(function(input, output){
   output$grafico1 <- renderPlotly({
-    plot_ly(data = iris, x = ~Petal.Length, y = ~Petal.Width, symbol = ~Species)
+    g <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width, colour = Species)) +
+      geom_point() +
+      labs(x = "Comprimento da Petala", y = "Largura da Petala")
+    ggplotly(g)
   })
 })
 
