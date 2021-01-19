@@ -1,6 +1,6 @@
 # setup de pacotes
 
-necessarios <-  c("shiny")
+necessarios <-  c("shiny", "ggplot2", "ploty")
 
 instalados  <- rownames(installed.packages())
 necessarios <- setdiff(necessarios, instalados)
