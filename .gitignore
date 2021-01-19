@@ -1,5 +1,4 @@
-
-.Rproj.user/*
+*.Rproj.user/*
 slides/slides.aux
 slides/slides.log
 slides/slides.nav
@@ -10,3 +9,5 @@ slides/slides.snm
 slides/slides.tex
 slides/slides.toc
 slides/slides.vrb
+.RData
+.Rhistory
