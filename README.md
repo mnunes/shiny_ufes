@@ -16,7 +16,16 @@ Ele foi parte da programação científica da [XIV Semana da Estatística da UFE
 - Alguns pacotes do R devem ser instalados ou rodando o comando `source("https://raw.githubusercontent.com/mnunes/shiny_ufes/master/setup.R")` no seu RStudio ou clicando em [https://raw.githubusercontent.com/mnunes/shiny_ufes/master/setup.R](https://raw.githubusercontent.com/mnunes/shiny_ufes/master/setup.R) e copiando e colando seu conteúdo dentro do RStudio
 
 
+## Como utilizar esse repositório
+
+Clone os arquivos em seu computador utilizando o github ou clique no botão verde acima onde está escrito `Code` e escolha a opção `Download ZIP`
+
+![](imagens/download.png)
+
+Acompanhe o curso com o material didático incluído na pasta `slides` e veja os códigos do R disponibilizados na pasta `exemplos`. Apenas essas duas pastas contém o material a ser utilizado no minicurso. Portanto, os outros arquivos podem ser ignorados sem prejuízo algum.
+
+
 <hr >
 
-Esse minicurso foi preparado por [Marcus Nunes](https://marcusnunes.me), Professor Adjunto do Deapartamento de Estatística da UFRN.
+Esse minicurso foi preparado por [Marcus Nunes](https://marcusnunes.me), Professor Adjunto do Departamento de Estatística da UFRN.
 
