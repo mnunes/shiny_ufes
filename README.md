@@ -13,13 +13,10 @@ Ele foi parte da programação científica da [XIV Semana da Estatística da UFE
 
 - R: [https://cran.r-project.org/](https://cran.r-project.org/)
 - RStudio: [https://www.rstudio.com/products/rstudio/download/](https://www.rstudio.com/products/rstudio/download/)
-- Some packages either running `source("https://raw.githubusercontent.com/mnunes/shiny_ufes/master/setup.R")` inside RStudio or clicking on [https://github.com/mnunes/2nd-csds/blob/master/setup.R](https://github.com/mnunes/2nd-csds/blob/master/setup.R) and copying and pasting its contents
+- Alguns pacotes do R devem ser instalados ou rodando o comando `source("https://raw.githubusercontent.com/mnunes/shiny_ufes/master/setup.R")` no seu RStudio ou clicando em [https://raw.githubusercontent.com/mnunes/shiny_ufes/master/setup.R](https://raw.githubusercontent.com/mnunes/shiny_ufes/master/setup.R) e copiando e colando seu conteúdo dentro do RStudio
 
 
 <hr >
 
 Esse minicurso foi preparado por [Marcus Nunes](https://marcusnunes.me), Professor Adjunto do Deapartamento de Estatística da UFRN.
 
-# shiny_ufes
-
-Esse repositório contém os arquivos necessários para acompanhar o minicurso de shiny da Semana da Estatística da UFES
