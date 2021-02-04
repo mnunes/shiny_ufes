@@ -26,7 +26,7 @@ shinyApp(ui, server)
 # e espacamento
 
 ui <- splitLayout(
-  style = "border: 1px solid silver;",
+  style = "border: 10px solid red;",
   cellWidths = 300,
   cellArgs = list(style = "padding: 6px"),
   plotOutput("plot1"),

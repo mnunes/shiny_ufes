@@ -6,8 +6,8 @@ library(shiny)
 
 ui <- fluidPage(
   sliderInput(inputId = "num", 
-              label = "Escolha um numero", 
-              value = 25, min = 1, max = 100),
+              label = "Determine o tamanho amostral", 
+              value = 50, min = 1, max = 1000),
   plotOutput("hist")
 )
 
@@ -15,7 +15,7 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   output$hist <- renderPlot({
-    hist(rnorm(input$num))
+    hist(rnorm(input$num), main = "Exemplo para UFES")
   })
 }
 
